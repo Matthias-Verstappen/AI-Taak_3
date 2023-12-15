@@ -41,7 +41,7 @@ def load_data():
     validation_split = 0.2
 
     train_ds = image_dataset_from_directory(
-        directory='C:/3TI/AI/data/training_set',
+        directory='training_set',
         labels='inferred',
         label_mode='categorical',
         batch_size=batch_size,
@@ -52,7 +52,7 @@ def load_data():
     )
 
     validation_ds = image_dataset_from_directory(
-        directory='C:/3TI/AI/data/training_set',
+        directory='training_set',
         labels='inferred',
         label_mode='categorical',
         batch_size=batch_size,
@@ -63,7 +63,7 @@ def load_data():
     )
 
     test_ds = image_dataset_from_directory(
-        directory='C:/3TI/AI/data/testing_set',
+        directory='testing_set',
         labels='inferred',
         label_mode='categorical',
         batch_size=batch_size,
